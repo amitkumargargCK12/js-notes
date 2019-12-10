@@ -1,0 +1,18 @@
+Coercion: conversion of type of a value.
+* Explicit
+* Implicit
+
+Javascript has typed values, not typed variables.
+Typeof is not asking for “type of a”; but rather for the “type of value currently in a ”
+
+Exception:
+	var a = null;
+	typeof a.  // “object” 
+
+== checks for value equality with coercion allowed
+=== checks for value equality without allowing coercion (strict equality)
+
+Avoid == or != in cases
+* Either value can be boolean (true or false)
+* Either value is the specific value (0, “”, [])
+In rest other cases it is safe to use ==.
